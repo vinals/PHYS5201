@@ -193,6 +193,8 @@ Error message and password prompt
 
 <li>Homework 2 2019</li>
 
+<li>Homework 2 2021</li>
+
 <li>Homework 3 2019</li>
 
 <li>Homework 4 2019</li>
@@ -10279,7 +10281,7 @@ Error message and password prompt
 <div created="20201123235647015" modified="20201123235701897" title="$:/SiteTitle">
 <pre>PHYS 5201. Thermal and Statistical Physics</pre>
 </div>
-<div created="20210627203342865" modified="20210902202007976" title="$:/state/sidebar">
+<div created="20210627203342865" modified="20210929155529400" title="$:/state/sidebar">
 <pre>no</pre>
 </div>
 <div created="20210902201946614" modified="20210902201946614" title="$:/state/tab/sidebar--595412856">
@@ -10288,7 +10290,7 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210927202852000" list="Home" modified="20210927202852000" title="$:/StoryList">
+<div list="Home" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20201030185022857" modified="20201030185022857" title="$:/theme">
@@ -10785,10 +10787,10 @@ Additional notes have been uploaded (complex read):
 
 {{TableOfContents}}</pre>
 </div>
-<div created="20201123235906857" modified="20210921124340223" tags="" title="Homework">
+<div created="20201123235906857" modified="20210929155500500" tags="" title="Homework">
 <pre>!!!! Homeworks
 * [[Homework 1|Homework 1 2021]]. Due on September 29, 2021.
-</pre>
+* [[Homework 2|Homework 2 2021]]. Due on October 6, 2021.</pre>
 </div>
 <div created="20201124000014789" modified="20201124000053683" title="Homework 1 2019">
 <pre>''Due Monday, September 23, 2019''
@@ -10902,6 +10904,58 @@ $$
 
 # Calculate the chemical potential of the liquid $\mu_{L}$ and of a vapor phase $\mu_{G}$ assumed to be an ideal gas.
 # At coexistence between the liquid and solid phases, $\mu_{L} = \mu_{G}$. Find the pressure (vapor pressure as it is called) as a function of temperature at coexistence.
+</pre>
+</div>
+<div created="20210929155601600" modified="20210929181922600" title="Homework 2 2021">
+<pre>''Due Wednesday, October 6, 2021''
+
+!!!! Question 1. Probability of equilibrium fluctuations
+
+At constant temperature $$T$$, the probability of observing a system at a given energy state $$E_{\nu}$$ is $$p_{\nu} = {\rm exp}(- \beta E_{v})/Z$$, with $$\beta = 1/k_{B}T$$, and $$Z$$ a normalization constant. If we now consider the subset of states that all have the same energy $$E$$, so that there are $$\Omega (E)$$ such distinct states with the same energy, then the probability of observing the system having an energy $$E$$ is 
+$$
+p(E) = \frac{1}{Z} \Omega(E) e^{- \beta E} = \frac{1}{Z} e^{\ln \Omega(E) - \beta E},
+$$
+imagining that we have summed $$p_{\nu}$$ over all the states $$\nu$$ that have an energy $$E$$. We wish to show that the probability distribution $$p(E)$$ is very narrow and centered around $$\langle E \rangle$$, the average value of $$E$$. In other words, observing values of $$E$$ other than $$\langle E \rangle$$ is extremely rare.
+
+# Estimate $$p(E)$$ around its average by expanding $$\ln p(E)$$ in Taylor series around $$\langle E \rangle$$ up to second order in $$E-\langle E \rangle$$. Show that the first order term is zero, and express the second order term as a function of the heat capacity $$C_{V}$$. Remember Boltzmann formula $$S(E) = k_{B} \ln \Omega(E)$$.
+# Use this expression to estimate the relative probability ($$p(E)/p( \langle E  \rangle)$$) of observing a fluctuation as small as $$10^{-6} \langle E \rangle$$ for an ideal gas of $$N = 0.001$$ mol.
+
+!!!! Question 2
+A system is composed of two harmonic oscillators, each of natural frequency $$\omega_{0}$$, and having permissible energies $$(n+1/2) \hbar \omega_{0}$$, where $$n$$ is any non-negative integer.  The total energy of the system is $$E'=n'\hbar \omega_{0}$$, where $$n'$$ is a positive integer.
+* For a given energy, how many microstates are available to the system ? What is the entropy of the system ? 
+* A second system is also composed of two harmonic oscillators, each of natural frequency $$2\omega_{0}$$. The total energy of this system is $$E''=n'' \hbar \omega_{0}$$, where $$n''$$ is an even integer.
+** How many microstates are available to this system ?
+** What is the entropy of a system composed of the two preceeding subsystems (separated and enclosed by a totally restrictive wall) ? Express the entropy as a function of $$E'$$ and $$E''$$.
+
+!!! Question 3
+Consider a set of independent and quantum harmonic oscillators such that the energy levels of each oscillator is discrete and given by
+$$
+\epsilon_{k} = \left( k + \frac{1}{2} \right) h \nu, \quad k=0,1,2 \ldots,
+$$
+where $$h$$ is Planck's constant, and $$\nu$$ the frequency of the oscillator.
+
+# Show that the single particle partition function $$Z_{1} = \sum_{k}  e^{-\beta \epsilon_{k}}$$ is given by, $$
+Z_{1} = \frac{e^{-h\nu/2k_{B}T}}{1-e^{-h\nu/k_{B}T}}.
+$$
+
+# Define a characteristic temperature of the oscillator through $$k_{B} \theta = h \nu$$, and calculate the value of $$\theta$$ for a frequency in the infrared region of the electromagnetic spectrum (say $$\nu = 10^{13}Hz$$).
+# Calculate the fractional occupation number of the energy levels $$&lt;n_{k}&gt;/&lt;N&gt;$$. Obtain specific values of this ratio for $$T=\theta$$, and for the lowest energy levels $$k=0, 1, 2,$$ and 3.
+# Calculate the probability that the oscillator is in a state of odd quantum number ($$k=1, 3, 5 ...$$) at temperature $$T$$.
+# Obtain the internal energy $$&lt;E&gt;$$ and the heat capacity at constant volume. Study the limits of both properties as $$T \ll \theta$$ and $$T \gg \theta$$.
+
+!!! Question 4
+Consider the following approximate model of a liquid: interactions between molecules are neglected except that all molecules experience a constant binding energy $$- \eta$$ that confines their motion to a volume $$v_{0}$$ per particle.
+
+# Show that for a classical liquid of $$N$$ indistinguishable molecules, the partition function is, $$
+Z_{L} = \frac{1}{N_{L}!} \left[ N_{L} v_{0} e^{\beta \eta} Z_{p}
+  \right]^{N_{L}},
+$$
+where $$Z_{p}$$ denotes the ideal gas contribution arising from the integral over momenta,$$
+Z_{p} = \frac{1}{h^{3}} \int d^{3}p e^{-\beta p^{2}/2m}.
+$$
+
+# Calculate the chemical potential of the liquid $$\mu_{L}$$ and of a vapor phase $$\mu_{G}$$ assumed to be an ideal gas.
+# At coexistence between the liquid and solid phases, $$\mu_{L} = \mu_{G}$$. Find the pressure (vapor pressure as it is called) as a function of temperature at coexistence.
 </pre>
 </div>
 <div created="20201124000237208" modified="20201124000252118" title="Homework 3 2019">
