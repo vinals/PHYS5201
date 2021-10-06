@@ -197,6 +197,8 @@ Error message and password prompt
 
 <li>Homework 3 2019</li>
 
+<li>Homework 3 2021</li>
+
 <li>Homework 4 2019</li>
 
 <li>Homework 5 2019</li>
@@ -10290,7 +10292,7 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210930142142500" list="Home" modified="20210930145120800" title="$:/StoryList">
+<div list="Home" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20201030185022857" modified="20201030185022857" title="$:/theme">
@@ -10787,10 +10789,11 @@ Additional notes have been uploaded (complex read):
 
 {{TableOfContents}}</pre>
 </div>
-<div created="20201123235906857" modified="20210929155500500" tags="" title="Homework">
+<div created="20201123235906857" modified="20211006144959500" tags="" title="Homework">
 <pre>!!!! Homeworks
 * [[Homework 1|Homework 1 2021]]. Due on September 29, 2021.
-* [[Homework 2|Homework 2 2021]]. Due on October 6, 2021.</pre>
+* [[Homework 2|Homework 2 2021]]. Due on October 6, 2021.
+* [[Homework 3|Homework 3 2021]]. Due on October 13, 2021.</pre>
 </div>
 <div created="20201124000014789" modified="20201124000053683" title="Homework 1 2019">
 <pre>''Due Monday, September 23, 2019''
@@ -10986,6 +10989,71 @@ where $m, c$, and $\hbar$ are constants, and the two branches correspond to posi
 \frac{\epsilon_{k}^{+}(k)}{1+e^{\beta \epsilon_{k}^{+}(k)}}. $$
 
 # Consider the low lying excitations of the dispersion relation (i.e., the limit of small $k$). What are the dominant temperature dependencies of the energy and heat capacity of the system ? Comment.</pre>
+</div>
+<div created="20211006145058900" modified="20211006150711500" title="Homework 3 2021">
+<pre>''Due Wednesday, October 13, 2021''
+
+!!!! Question 1
+Consider the following approximate model of a liquid: interactions between molecules are neglected except that all molecules experience a constant binding energy $$- \eta$$ that confines their motion to a volume $$v_{0}$$ per particle.
+
+# Show that for a classical liquid of $$N$$ indistinguishable molecules, the partition function is, $$
+Z_{L} = \frac{1}{N_{L}!} \left[ N_{L} v_{0} e^{\beta \eta} Z_{p}
+  \right]^{N_{L}},
+$$ where $$Z_{p}$$ denotes the ideal gas contribution arising from the integral over momenta,$$
+Z_{p} = \frac{1}{h^{3}} \int d^{3}p e^{-\beta p^{2}/2m}.
+$$
+
+# Calculate the chemical potential of the liquid $$\mu_{L}$$ and of a vapor phase $$\mu_{G}$$ assumed to be an ideal gas.
+# At coexistence between the liquid and solid phases, $$\mu_{L} = \mu_{G}$$. Find the pressure (vapor pressure as it is called) as a function of temperature at coexistence.
+
+!!!! Question 2. Equipartition Theorem
+Consider a system in which the energy $$E$$ depends continuously on two variables: $$E=E(x_{i},x_{j})$$. Show that, given the canonical distribution, it follows that
+$$
+\langle x_{i} \frac{\partial E}{\partial x_{j}} \rangle = k_{B} T \delta_{ij},
+$$
+where $$\delta_{ij}$$ is the Kronecker delta.
+
+Assume now that one has a harmonic oscillator with energy,
+$$
+E(p,q) = \frac{p^{2}}{2m} + \frac{K}{2} q^{2},
+$$
+where $$m$$ is the mass of the oscillator and $$K$$ the spring constant. Use the results above to show that $$\langle E \rangle = k_{B}T$$ (equipartition of energy).
+
+!!!! Question 3. Ensemble of harmonic oscillators
+Consider a system of $$N$$ classical and distinguishable, harmonic oscillators. Their energy is,
+$$
+E = \sum_{i=1}^{N} \frac{p_{i}^{2}}{2m} + \sum_{i=1}^{N} \frac{K}{2}
+| \vec{r}_{i} - \vec{r}_{i}^{\;(0)} |^{2}.
+$$
+where $$\vec{r}_{i}^{\;(0)}$$ is the equilibrium position of the $$i$$-th oscillator particle.
+
+# Calculate the canonical partition function of this system of classical oscillators.
+# Show that this result agrees with the quantum mechanical calculation in the limit of high temperatures. Recall that $$\nu = (1/2\pi) \sqrt{K/m}$$
+
+!!!! Question 4. Fluctuations in occupation numbers
+The grand canonical partition function for a system of non interacting particles has been shown to be (in the same notation used in class), $$
+Z = \prod_{k} \sum_{n_{k}=0}^{\infty} e^{\beta n_{k} (\mu - \epsilon_{k})}.
+$$
+
+# Show that $$
+- \frac{1}{\beta} \frac{\partial \ln Z}{\partial \epsilon_{j}} =  \frac{\sum_{n_{j}=0}^{\infty} n_{j} e^{\beta n_{j} (\mu - \epsilon_{j})}} {\sum_{n_{j}=0}^{\infty}  e^{\beta n_{j} (\mu - \epsilon_{j})}},
+$$ and hence $$
+-\frac{1}{\beta} \frac{\partial \ln Z}{\partial \epsilon_{j}} = \langle n_{j}
+\rangle
+$$ the average occupation number of level $$\epsilon_{j}$$
+
+# Occupation numbers are themselves fluctuating quantities. Show that the variance of the occupation numbers is given by,$$
+\frac{1}{\beta^{2}} \frac{\partial^{2} \ln Z}{\partial \epsilon_{j}^{2}} =
+  \langle n_{j}^{2} \rangle - \langle n_{j} \rangle^{2}.
+$$
+# Given the known results for the partition function corresponding to Bose-Einstein and Fermi-Dirac distributions,$$
+Z_{BE} = \prod_{k} \frac{1}{1-e^{\beta \left( \mu - \epsilon_{k} \right)}}, \quad\quad
+Z_{FD}  =  \prod_{k} \left( 1+e^{\beta \left( \mu - \epsilon_{k} \right)} \right),
+$$ and their corresponding average occupation numbers $$\langle n_{j} \rangle$$ given in class, show that $$
+\frac{\langle n_{j}^{2} \rangle - \langle n_{j} \rangle^{2}}{\langle n_{j}
+  \rangle^{2}} = \frac{1}{\langle n_{j} \rangle} - a,
+$$ where $$a = -1$$ for Bose-Einstein statistics, and $$a = 1$$ for Fermi-Dirac statistics.
+# Sketch both $$\langle n_{j} \rangle$$ and the ratio $$ R = \left( \langle n_{j}^{2} \rangle - \langle n_{j} \rangle^{2}\right)/ \langle n_{j} \rangle^{2}$$ as a function of $$\beta (\epsilon_{j} - \mu)$$ for the two cases of Bose-Einstein and Fermi-Dirac statistics. Comment on the differences at low energies and in the classical limit $$\beta (\epsilon_{j} - \mu) \gg 1$$. What dependence of $$R$$ on $$\beta (\epsilon_{j} - \mu)$$ would you expect if the occupation numbers obeyed Gaussian statistics ?</pre>
 </div>
 <div created="20201124000324411" modified="20201124000336641" title="Homework 4 2019">
 <pre>''Due Monday, October 21, 2019''
