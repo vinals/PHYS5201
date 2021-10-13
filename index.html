@@ -201,6 +201,8 @@ Error message and password prompt
 
 <li>Homework 4 2019</li>
 
+<li>Homework 4 2021</li>
+
 <li>Homework 5 2019</li>
 
 <li>Homework 6 2019</li>
@@ -10283,7 +10285,7 @@ Error message and password prompt
 <div created="20201123235647015" modified="20201123235701897" title="$:/SiteTitle">
 <pre>PHYS 5201. Thermal and Statistical Physics</pre>
 </div>
-<div created="20210627203342865" modified="20210929155529400" title="$:/state/sidebar">
+<div created="20210627203342865" modified="20211013175623900" title="$:/state/sidebar">
 <pre>no</pre>
 </div>
 <div created="20210902201946614" modified="20210902201946614" title="$:/state/tab/sidebar--595412856">
@@ -10292,7 +10294,7 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20211008013850100" list="Home" modified="20211008013852100" title="$:/StoryList">
+<div created="20211013174358800" list="Home" modified="20211013175540500" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20201030185022857" modified="20201030185022857" title="$:/theme">
@@ -10790,11 +10792,12 @@ Additional notes have been uploaded (complex read):
 
 {{TableOfContents}}</pre>
 </div>
-<div created="20201123235906857" modified="20211006144959500" tags="" title="Homework">
+<div created="20201123235906857" modified="20211013174636000" tags="" title="Homework">
 <pre>!!!! Homeworks
 * [[Homework 1|Homework 1 2021]]. Due on September 29, 2021.
 * [[Homework 2|Homework 2 2021]]. Due on October 6, 2021.
-* [[Homework 3|Homework 3 2021]]. Due on October 13, 2021.</pre>
+* [[Homework 3|Homework 3 2021]]. Due on October 13, 2021.
+* [[Homework 4|Homework 4 2021]]. Due on October 20, 2021.</pre>
 </div>
 <div created="20201124000014789" modified="20201124000053683" title="Homework 1 2019">
 <pre>''Due Monday, September 23, 2019''
@@ -11150,6 +11153,42 @@ $$
 $$
 How does this compressibility compare with that of classical ideal gas ? Why would an ideal gas of fermions be less compressible than a classical ideal gas ?</pre>
 </div>
+<div created="20211013174735000" modified="20211013175446200" title="Homework 4 2021">
+<pre>''Due Wednesday, October 20, 2021''
+
+!!!! Question 1. Specific heat of rotons
+The dispersion relation of liquid He near its superfluid transition can be found experimentally by neutron scattering. The experimental result is shown in  the figure.
+[img[http://homepages.spa.umn.edu/~vinals/tspot_files/phys5201/2015/roton.jpg]]
+The dispersion relation is interpreted as a combination of a &quot;phonon&quot; branch at low $$k$$,
+$$
+\epsilon_{k} = \hbar c k
+$$
+corresponding to compression waves in the fluid, and a &quot;roton&quot; branch,
+$$
+\epsilon_{k} = \Delta + \frac{\hbar^{2} (k - k_{0})^2}{2 \sigma}
+$$
+with $$\Delta$$ and $$k_{0}$$ constants, as indicated in the figure, that corresponds to vortex formation.
+
+* Calculate the average energy and the heat capacity at constant volume $$(C_{V})_{\rm phonon}$$ at low temperature for a gas of ''non-conserved'' bosons that are described by the phonon dispersion relation above. (By non-conserved one means that phonons are freely created and annihilated, so that their number is not constant; cf. photons in a cavity or phonons in a crystal.)
+* Calculate the average energy and heat capacity at constant volume $$(C_{V})_{\rm roton}$$ at low temperature for a gas of non-conserved bosons that are described by the roton dispersion relation above. ''Note:'' The required integral to obtain the average energy cannot be calculated analytically. You may therefore just obtain its leading dependence at low temperature.
+* The asymptotic dependence at low temperatures of $$(C_{V})_{\rm phonon}$$ is very different from $$(C_{V})_{\rm roton}$$. Can you explain this difference in terms of their respective dispersion relations ?
+
+!!!! Question 2. (Longish) Dirac fermions
+Consider a system on non interacting Dirac fermions, particles of spin 1/2, with individual particle energy levels $$\epsilon_{k}$$ as a function of wavenumber $$k$$ given by the following dispersion relation,
+$$
+\epsilon_{k}^{\pm} = \pm \sqrt{ m^{2} c^{4} + \hbar^{2}c^{2}
+    k^{2}},
+$$
+where $$m, c$$, and $$\hbar$$ are constants, and the two branches correspond to positive and negative energy states, independent of spin.
+
+# For a general system of independent fermionic particles at chemical potential $$\mu$$, show that the expected occupation number of a single particle level of energy $$\mu + \delta$$ equals one minus the expected occupation number of a level of energy $$\mu - \delta$$. (This is a &quot;particle-hole&quot; symmetry: the probability of having a particle at energy $$\mu + \delta$$ equals the probability of having a \lq\lq hole&quot; at energy $$\mu - \delta$$).
+# At $$T = 0$$, all negative energy Dirac states are occupied, and all positive energy states are empty. What is the value of the corresponding chemical potential $$\mu(T=0)$$ ?
+# The symmetry of part (1) can be written as $$\langle n_{k}^{-}\rangle = 1 - \langle n_{k}^{+} \rangle$$, where $$\langle n_{k}^{-}\rangle$$ is the occupation number of the $$\epsilon_{k}^{-}$$ branch, and similar definition for the (+) branch. What does this imply for the chemical potential at finite temperatures ?
+# Remembering that there are two spin states for each particle state $$k$$, show that the excitation energy of this system is $$
+\langle E(T) \rangle - E(T=0) = 4V \int \frac{d^{3}k}{(2\pi)^{3}} 
+\frac{\epsilon_{k}^{+}(k)}{1+e^{\beta \epsilon_{k}^{+}(k)}}. $$
+# Consider the low lying excitations of the dispersion relation (i.e., the limit of small $$k$$). What are the dominant temperature dependencies of the energy and heat capacity of the system ? Comment.</pre>
+</div>
 <div created="20201124000401174" modified="20201124000545412" title="Homework 5 2019">
 <pre>''Due Friday, November 8, 2019''
 
@@ -11397,7 +11436,7 @@ where $\alpha$ and $\beta$ stand for either longitudinal $l$, or transverse $t$ 
 * [[One or two small points in thermodynamics|https://arxiv.org/abs/2003.03800]], by Walter F. Wreszinski. 
 * [[Local pressure for inhomogeneous fluids|https://arxiv.org/abs/2008.11709]]. Jim Dufty et al. August 2020. Discusses differences and equivalence between local thermodynamics pressure and pressure through hydrodynamics stress.</pre>
 </div>
-<div created="20201123235841562" modified="20210930155042600" title="Syllabus">
+<div created="20201123235841562" modified="20211013174445300" title="Syllabus">
 <pre>!!Course Information
 ''Instructor:'' Jorge Vi&amp;ntilde;als &lt;br&gt;
 ''Office:'' Tate Hall 130-17 &lt;br&gt;
@@ -11411,7 +11450,7 @@ where $\alpha$ and $\beta$ stand for either longitudinal $l$, or transverse $t$ 
 ''Class web site: '' https://z.umn.edu/phys5201
 
 !!Exams and Final
-There will be an in-class mid term exam, and one final exam (December 22, 2021. 1:30 p.m. - 4:30 p.m.). There will be several homework assignments during the semester. Typically, the homework will be due one week after being assigned, and may include reading of relevant material. There will be reduced credit for late homeworks: 75% for up to one week late, 50% for up to two weeks late. No credit after that. 
+There will be an in-class mid term exam (''October 22, 2021, 11:15 a.m. - 12:05 p.m''), and one final exam (''December 22, 2021. 1:30 p.m. - 4:30 p.m.''). There will be several homework assignments during the semester. Typically, the homework will be due one week after being assigned, and may include reading of relevant material. There will be reduced credit for late homeworks: 75% for up to one week late, 50% for up to two weeks late. No credit after that. 
 
 !!Required Materials
 There is ''no'' required textbook for this class. The class will closely follow a set of notes available online.  The following textbooks cover essentially equivalent material and provide supplementary information.
