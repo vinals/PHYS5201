@@ -10287,7 +10287,7 @@ Error message and password prompt
 <div created="20201123235647015" modified="20201123235701897" title="$:/SiteTitle">
 <pre>PHYS 5201. Thermal and Statistical Physics</pre>
 </div>
-<div created="20210627203342865" modified="20211013175623900" title="$:/state/sidebar">
+<div created="20210627203342865" modified="20211027220043100" title="$:/state/sidebar">
 <pre>no</pre>
 </div>
 <div created="20210902201946614" modified="20210902201946614" title="$:/state/tab/sidebar--595412856">
@@ -10296,7 +10296,7 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20211027213255800" list="Home" modified="20211027215459300" title="$:/StoryList">
+<div created="20211027220047000" list="Home" modified="20211027220049100" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20201030185022857" modified="20201030185022857" title="$:/theme">
@@ -10796,13 +10796,13 @@ Additional notes have been uploaded (complex read):
 
 {{TableOfContents}}</pre>
 </div>
-<div created="20201123235906857" modified="20211027215436300" tags="" title="Homework">
+<div created="20201123235906857" modified="20211027222003200" tags="" title="Homework">
 <pre>!!!! Homeworks
 * [[Homework 1|Homework 1 2021]]. Due on September 29, 2021. Solutions: [ext[1.3|files/hwk_sol_1-3.pdf]].
 * [[Homework 2|Homework 2 2021]]. Due on October 6, 2021. Solutions: [ext[2.1|files/hwk_sol_2-1.pdf]], [ext[2.2|files/hwk_sol_2-2.pdf]], [ext[2.3|files/hwk_sol_2-3.pdf]].
 * [[Homework 3|Homework 3 2021]]. Due on October 13, 2021. Solutions: [ext[3.1|files/hwk_sol_3-1.pdf]], [ext[3.2|files/hwk_sol_3-2.pdf]], [ext[3.3|files/hwk_sol_3-3.pdf]], [ext[3.4|files/hwk_sol_3-4.pdf]].
 * [[Homework 4|Homework 4 2021]]. Due on October 20, 2021.
-* [[Homework 5|Homework 5 2021]]. Due on November 10, 2021.</pre>
+* [[Homework 5|Homework 5 2021]]. Due on November 3, 2021.</pre>
 </div>
 <div created="20201124000014789" modified="20201124000053683" title="Homework 1 2019">
 <pre>''Due Monday, September 23, 2019''
@@ -11266,8 +11266,8 @@ $$
 $$
 </pre>
 </div>
-<div created="20211027213402900" modified="20211027215424700" title="Homework 5 2021">
-<pre>''Due Wednesday, November 10, 2021''
+<div created="20211027213402900" modified="20211027221911500" title="Homework 5 2021">
+<pre>''Due Wednesday, November 3, 2021''
 
 !!!! Question 1
 Calculate the dielectric constant of a gas of electric dipoles such as the one shown in the [img width=400px [http://homepages.spa.umn.edu/~vinals/tspot_files/phys5201/2017/dipole_schematic.png]] figure. The molecule has a permanent electric dipole $$\mu$$, and in spherical coordinates its energy, that includes rotational kinetic energy and interaction energy with the imposed electric field $$E$$, is given by, $$
@@ -11286,7 +11286,31 @@ $$
 # Given the partition function just computed, show that $$
 P = \frac{N}{V} \left( \mu \coth (\beta \mu E) - \frac{k_{B}T}{E} \right)
 $$
-# The dielectric constant of such as gas $$\epsilon$$ is related to the polarization $$\epsilon E = \epsilon_{0} E + P$$, where $$\epsilon_{0}$$ is the dielectric constant in vacuum. Find the expression for the dielectric constant $$\epsilon$$ at small field amplitudes. Recall $$\coth x \approx 1/x + x/3 + \ldots$$ for small $$x$$.</pre>
+# The dielectric constant of such as gas $$\epsilon$$ is related to the polarization $$\epsilon E = \epsilon_{0} E + P$$, where $$\epsilon_{0}$$ is the dielectric constant in vacuum. Find the expression for the dielectric constant $$\epsilon$$ at small field amplitudes. Recall $$\coth x \approx 1/x + x/3 + \ldots$$ for small $$x$$.
+
+!!!! Question 2. Elasticity of a polymer chain
+Consider the following one dimensional model of a &quot;freely jointed&quot; polymer chain. A chain is made of $$N$$ linked segments, each of length $$l$$. In this one dimensional case, a chain is built by adding segments, each segment taking one of the two possible directions on the $$x$$ axis ($$\pm l$$). Let $$R$$ be the end to end distance (from the beginning of the first segment to the end of the last segment).
+
+# Justify that the number of configurations for any given, fixed, $$R$$ is $$
+\Omega(R) = \frac{N!}{(\frac{N+n}{2})!(\frac{N-n}{2})!},
+$$ with $$R = nl$$.
+# Obtain the entropy as a function of the end to end distance, $$S=S(R)$$, in the limit of a long chain ($$N \gg 1$$).
+# According to the Second Law of Thermodynamics, and given that the chain segments are non interacting, we have $$TdS = dW = f dR$$, where $$f$$ is the chain tension. Compute the tension $$f$$. Consider the limit of small extensions $$R \ll Nl$$, and show that the chain obeys Hooke's Law. Obtain the spring constant, and discuss its dependence on the various parameters. Where is this tension force coming from ?
+
+!!!! Question 3. Statistics of a flexible polymer
+Consider now a flexible polymer chain in three dimensions. The chain is composed of consecutive straight segments, all of equal length $$l$$, each denoted by the vector $$\vec{R}_{i}, i = 1, \ldots, N$$. At segment joints, the two segments are free to equally rotate in any orientation, however, there is a correlation on the plane defined by the two segments $$
+\langle \vec{R}_{i+1} \cdot \vec{R}_{i} \rangle = l^{2} \cos \alpha,
+$$
+where the constant $$\alpha$$ is the average angle between two consecutive segments. 
+
+# Show that $$
+\langle \vec{R}_{i+2} \cdot \vec{R}_{i} \rangle = l^{2} \cos^{2} \alpha .
+$$ 
+# Given that the end to end distance on the chain can be written as $$\vec{R} = \sum_{i=1}^{N-1} \vec{R}_{i}$$, show that,$$ 
+\langle R^{2} \rangle = (N-1)l^{2} \left[ \frac{1+\cos \alpha}{1 - \cos \alpha} - \frac{2 \cos \alpha}{N-1} \frac{1 - (\cos \alpha)^{N}}{(1-\cos \alpha)^2} \right] $$
+# In the long chain limit, $$N \gg 1$$ and for small $$\alpha$$, show that the average square end to end distance reduces to $$
+\langle R^{2} \rangle = 2 N l l_{p} = (Nl/2 l_{p}) (2 l_{p})^{2},
+$$ by defining $$l_{p} \approx 2l/\alpha^{2}$$. This is precisely the result for a freely jointed chain of $$Nl/2l_{p}$$ segments of length $$2 l_{p}$$. Provide an interpretation of this result.</pre>
 </div>
 <div created="20201124000617313" modified="20201124000707907" title="Homework 6 2019">
 <pre>''Due Monday, November 18, 2019''
